@@ -10,6 +10,7 @@ namespace TransacaoFinanceira.Domain
         }
 
         public bool Debitar(decimal valor){
+
             if (this.saldo < valor) return false;
             this.saldo -= valor;
             return true;
