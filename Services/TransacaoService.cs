@@ -27,4 +27,9 @@ namespace TransacaoFinanceira.Services
             }
 
             destino.Creditar(operacao.valor);
-            Console.WriteLine($"Trans
+            Console.WriteLine($"Transacao número {operacao.correlationId} foi efetuada com sucesso!! Saldo atual conta Origem:{origem.saldo} Saldo atual conta Destino:{destino.saldo}");
+               
+
+        }
+    }
+}
